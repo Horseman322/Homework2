@@ -44,19 +44,23 @@ public class Main {
             int wieghtInG = wieght * kilo;
             int first = wieghtInG / firstWay;
             int second = wieghtInG / secondWay;
+            double midl = (first + second) / (2 * 1.0);
             System.out.println("худеет по 250 за " + first + " дней");
             System.out.println("худеет по 500 за " + second + " дней");
+            System.out.println("среднее колличество дней " + midl);
 
 
             int Masha = 67760;
             int Denis = 83690;
             int Kristina = 76230;
+            int Percent = 10;
+            double multiplier = Percent / (100 * 1.0);
             int MashaInYearEarlier = Masha * 12;
             int DenisInYearEarlier = Denis * 12;
             int KristinaInYearEarlier = Kristina * 12;
-            int MashaNewZP = Masha + 6776;
-            int DenisNewZP = Denis + 8369;
-            int KristinaNewZP = Kristina + 7623;
+            int MashaNewZP = (int) (Masha + (Masha * multiplier));
+            int DenisNewZP = (int) (Denis + (Denis * multiplier));
+            int KristinaNewZP = (int) (Kristina + (Kristina* multiplier));
             int MashaInYearAfter = MashaNewZP * 12;
             int DenisInYearAfter = DenisNewZP * 12;
             int KristinaInYearAfter = KristinaNewZP * 12;
